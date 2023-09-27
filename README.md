@@ -32,3 +32,34 @@ CRUD機能を実装。
 | favorite_snack | VARCHAR | 猫の好きなおやつ |
 
 ## 実行結果
+```
+curl --location --request GET 'http://localhost:8080/cats' \
+--header 'Authorization;' \
+--data ''
+```
+```
+DBに入っている全件分のデータを表示
+{
+        "id": 番号,
+        "catName": "猫の名前",
+        "catColor": "猫の毛色",
+        "catBirthDate": "猫の生年月日",
+        "favoriteSnack": "猫の好きなおやつ"
+    }
+```
+---
+```
+curl --location --request GET 'http://localhost:8080/cats/1' \
+--header 'Authorization;' \
+--data ''
+```
+```
+指定したidのデータを表示
+{
+    "id": 1,
+    "catName": "Roku",
+    "catColor": "黒",
+    "catBirthDate": "2019-06-09",
+    "favoriteSnack": "ちゅ〜る贅沢まぐろ味"
+}
+```
