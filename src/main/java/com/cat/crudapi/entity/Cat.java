@@ -1,6 +1,6 @@
 package com.cat.crudapi.entity;
 
-import java.util.Date;
+import java.time.LocalDate;
 
 public class Cat {
     private int id;
@@ -9,14 +9,14 @@ public class Cat {
 
     private String catColor;
 
-    private Date catBirthDate;
+    private LocalDate catBirthDate;
 
     private String favoriteSnack;
 
     /*
      *猫の「名前」「毛色」「生年月日」「好物」
      */
-    public Cat(int id, String catName, String catColor, Date catBirthDate, String favoriteSnack) {
+    public Cat(int id, String catName, String catColor, LocalDate catBirthDate, String favoriteSnack) {
         this.id = id;
         this.catName = catName;
         this.catColor = catColor;
@@ -36,7 +36,7 @@ public class Cat {
         return catColor;
     }
 
-    public Date getCatBirthDate() {
+    public LocalDate getCatBirthDate() {
         return catBirthDate;
     }
 
