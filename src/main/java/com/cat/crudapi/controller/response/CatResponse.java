@@ -2,8 +2,6 @@ package com.cat.crudapi.controller.response;
 
 import com.cat.crudapi.entity.Cat;
 
-import java.time.LocalDate;
-
 public class CatResponse {
     private int id;
 
@@ -11,7 +9,7 @@ public class CatResponse {
 
     private String catColor;
 
-    private LocalDate catBirthDate;
+    private String catBirthDate;
 
     private String favoriteSnack;
 
@@ -33,7 +31,7 @@ public class CatResponse {
         return catColor;
     }
 
-    public LocalDate getCatBirthDate() {
+    public String getCatBirthDate() {
         return catBirthDate;
     }
 
